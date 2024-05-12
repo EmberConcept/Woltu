@@ -56,7 +56,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -71,7 +71,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -86,7 +86,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -101,7 +101,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -116,7 +116,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -131,7 +131,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -146,7 +146,7 @@ const Page = () => {
                             <p>CEO</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p>
+                            {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">

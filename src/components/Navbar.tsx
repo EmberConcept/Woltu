@@ -15,7 +15,7 @@ const Navbar = async () => {
             <MaxWidthWrapper>
                 <div className="flex h-14 items-center justify-between border-b border-zinc-200">
                     <Link href='/' className="flex z-40 font-semibold">
-                        <p>Woltu Energy</p>
+                        <Image className="w-32" src="/logo.png" width={1072} height={289} alt="Woltu Energy Logo"></Image>
                     </Link>
 
                     <div className="h-full flex items-center space-x-4">

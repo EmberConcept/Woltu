@@ -53,10 +53,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_1.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>CEO</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -68,10 +68,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_2.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>CEO</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -83,10 +83,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_3.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>CEO</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -98,10 +98,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_4.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>CEO</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -113,10 +113,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_5.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>CEO</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -128,10 +128,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_6.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>CEO</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">
@@ -143,10 +143,10 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_7.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Mitarbeitername</p>
-                            <p>Leitung</p>
+                            <p>Mitarbeiterposition</p>
                         </div>
                         <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter. Beispieltext für Mitarbeiter.</p>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
                         </div>
                         <div className="flex items-center gap-5">
                             <Button variant="outline">

@@ -143,7 +143,7 @@ const Page = () => {
                         <Image className="w-20 h-20 rounded-lg" src="/team/team_7.jpg" width={300} height={300} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">John Doe</p>
-                            <p>CEO</p>
+                            <p>Leitung</p>
                         </div>
                         <div>
                             {/* <p className="text-muted-foreground">John ist leidenschaftlich für erneuerbare Energien und führt unser Unternehmen</p> */}

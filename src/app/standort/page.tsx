@@ -20,7 +20,7 @@ const Page = () => {
                 <div className="grid grid-cols-2 gap-5 mt-10">
                     <Image className="rounded-lg" src="/standort/1.jpg" width={2967} height={2225} alt="Firma"></Image>
                     <Image className="rounded-lg" src="/standort/2.jpg" width={2443} height={1832} alt="Firma"></Image>
-                    <Image className="col-span-2 rounded-lg" src="/standort/3.jpg" width={3000} height={2250} alt="Firma"></Image>
+                    <Image className="col-span-2 rounded-lg" src="/standort/3.JPG" width={3000} height={2250} alt="Firma"></Image>
                 </div>
 
                 <div className="grid grid-cols-1 gap-5 w-full mt-10 md:grid-cols-5">

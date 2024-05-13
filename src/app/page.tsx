@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Reveal } from "@/components/reveal";
+import { Reveal } from "@/components/Reveal";
 
 export default function Home() {
   return (

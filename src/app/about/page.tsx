@@ -18,29 +18,30 @@ const Page = () => {
                 </div>
             </section>
 
-            <section className="mt-10">
+            <section className="mt-20 p-10 bg-gray-100 border border-gray-200 rounded-lg">
                 <Badge>Wie alles begann</Badge>
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Unsere Unternehmensgeschichte</h1>
-                <p className="mt-2 text-muted-foreground">Unsere Reise begann im Jahr 2023, als wir, ein junges Unternehmen in der aufstrebenden
-                    Photovoltaikbranche, unseren Weg in die Welt des nachhaltigen Energieumbruchs
-                    wagten. Doch unsere Jugendlichkeit täuscht nicht über unsere tief verwurzelte Kompetenz
-                    hinweg. Jeder unserer Mitarbeiter bringt eine Fülle an Erfahrungen mit, die sie über Jahre in
-                    der Branche gesammelt haben. Bei der Woltu Energy GmbH finden sie endlich, was sie in ihren vorherigen Unternehmen
-                    vermisst haben. Unsere Stärke liegt nicht nur in unserem Wissen, sondern auch in
-                    unserem umfassenden Netzwerk. Wir haben Zugang zu den führenden Herstellern von
-                    Komponenten und sind Experten im Bereich B2C und B2B. Egal ob Photovoltaikanlagen für
-                    Ihr Einfamilienhaus, gewerbliche Aufdachanlagen größer 100 kWp, wahlweise mit USVAnalgen oder Freilandanlagen größer 1 MW, wir liefern stets höchste Qualität und
-                    Zuverlässigkeit.
-                    Was uns einzigartig macht, ist nicht nur unser Fachwissen, sondern auch unser
-                    Engagement für Exzellenz in allen Bereichen und unsere eigenen Montageteams
-                    garantieren höchste handwerkliche Leistung bei der Installation. Das beeindruckende
-                    Firmengelände der Woltu Engery GmbH in Solingen, mit über 45.000 Quadratmetern
-                    Lagerfläche und einem 250 Quadratmeter großen Showroom bietet Interessenten die
-                    Möglichkeit, unsere Komponenten live zu erleben und sich vor Ort beraten zu lassen.
-                    Unsere Geschichte ist geprägt von Leidenschaft, Innovation und dem festen Glauben an
-                    eine nachhaltige Zukunft. Bei der Woltu Energy GmbH setzen wir uns jeden Tag dafür ein,
-                    die Welt ein Stückchen grüner zu machen und unseren Kunden, keinen Standard, sondern
-                    die bestmögliche Lösung zu bieten.</p>
+                <p className="mt-2 text-muted-foreground text-justify">Unsere Reise begann im Jahr 2023, als wir, ein junges Unternehmen in der aufstrebenden
+                    Photovoltaikbranche, unseren Weg in die Welt des nachhaltigen Energieumbruchs wagten. Doch
+                    unsere Jugendlichkeit täuscht nicht über unsere tief verwurzelte Kompetenz hinweg. Jeder
+                    unserer Mitarbeiter bringt eine Fülle an Erfahrungen mit, die sie über Jahre in der Branche
+                    gesammelt haben. Bei der Woltu Energy GmbH finden sie endlich, was sie in ihren vorherigen
+                    Unternehmen vermisst haben.
+                    Unsere Stärke liegt nicht nur in unserem Wissen, sondern auch in unserem umfassenden
+                    Netzwerk. Wir haben Zugang zu den führenden Herstellern von Komponenten und sind Experten
+                    im Bereich B2C und B2B. Egal ob Photovoltaikanlagen für Ihr Einfamilienhaus, gewerbliche
+                    Aufdachanlagen größer 100 kWp, wahlweise mit USV-Analgen oder Freilandanlagen größer 1 MW,
+                    wir liefern stets höchste Qualität und Zuverlässigkeit.
+                    Was uns einzigartig macht, ist nicht nur unser Fachwissen, sondern auch unser Engagement für
+                    Exzellenz in allen Bereichen und unsere eigenen Montageteams garantieren höchste
+                    handwerkliche Leistung bei der Installation. Das beeindruckende Firmengelände der Woltu
+                    Energy GmbH in Solingen, mit über 45.000 Quadratmetern Lagerfläche und einem 350
+                    Quadratmeter großen Showroom bietet Interessenten die Möglichkeit, unsere Komponenten live
+                    zu erleben und sich vor Ort beraten zu lassen.
+                    Unsere Geschichte ist geprägt von Leidenschaft, Innovation und dem festen Glauben an eine
+                    nachhaltige Zukunft. Bei der Woltu Energy GmbH setzen wir uns jeden Tag dafür ein, die Welt ein
+                    Stückchen grüner zu machen und unseren Kunden, keinen Standard, sondern die bestmögliche
+                    Lösung zu bieten.</p>
             </section>
 
             <section className="mt-20">
@@ -50,25 +51,10 @@ const Page = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
                     <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_1.jpg" width={300} height={300} alt="Team"></Image>
+                        <Image className="w-20 h-20 rounded-lg" src="/img/Bild_9.jpg" width={4096} height={4096} alt="Team"></Image>
                         <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
-                        </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_2.jpg" width={300} height={300} alt="Team"></Image>
-                        <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
+                            <p className="font-semibold">Zeljko Busić</p>
+                            <p>Management</p>
                         </div>
                         <div>
                             <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
@@ -80,25 +66,10 @@ const Page = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_3.jpg" width={300} height={300} alt="Team"></Image>
+                        <Image className="w-20 h-20 rounded-lg" src="/img/Bild_10.jpg" width={3966} height={3966} alt="Team"></Image>
                         <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
-                        </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_4.jpg" width={300} height={300} alt="Team"></Image>
-                        <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
+                            <p className="font-semibold">Marcus Carl</p>
+                            <p>Vertrieb / Marketing</p>
                         </div>
                         <div>
                             <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
@@ -110,25 +81,10 @@ const Page = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_5.jpg" width={300} height={300} alt="Team"></Image>
+                        <Image className="w-20 h-20 rounded-lg" src="/img/Bild_11.jpg" width={3597} height={3597} alt="Team"></Image>
                         <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
-                        </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_6.jpg" width={300} height={300} alt="Team"></Image>
-                        <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
+                            <p className="font-semibold">Stefan Striehn</p>
+                            <p>Einkauf</p>
                         </div>
                         <div>
                             <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
@@ -140,10 +96,25 @@ const Page = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <Image className="w-20 h-20 rounded-lg" src="/team/team_7.jpg" width={300} height={300} alt="Team"></Image>
+                        <Image className="w-20 h-20 rounded-lg" src="/img/Bild_12.jpg" width={4096} height={4096} alt="Team"></Image>
                         <div>
-                            <p className="font-semibold">Mitarbeitername</p>
-                            <p>Mitarbeiterposition</p>
+                            <p className="font-semibold">Marcel Peters</p>
+                            <p>DC Spezialist</p>
+                        </div>
+                        <div>
+                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
+                        </div>
+                        <div className="flex items-center gap-5">
+                            <Button variant="outline">
+                                <Mail className="w-5 h-5" />
+                            </Button>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <Image className="w-20 h-20 rounded-lg" src="/img/Bild_17.jpg" width={3405} height={3405} alt="Team"></Image>
+                        <div>
+                            <p className="font-semibold">Guido Groß</p>
+                            <p>AC Spezialist</p>
                         </div>
                         <div>
                             <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
@@ -159,7 +130,8 @@ const Page = () => {
 
             <section className="mt-14">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Wir suchen dich!</h1>
-                <p className="mt-2 text-muted-foreground max-w-prose">Wir suchen nach motivierten Mitarbeitern, die sich mit unserer Unternehmensphilosophie identifizieren und aktiv dazu beitragen möchten.</p>
+                <p className="mt-2 text-muted-foreground max-w-prose text-justify">Wir suchen nach motivierten Mitarbeitern, die sich mit unserer Unternehmensphilosophie
+                    identifizieren und aktiv dazu beitragen möchten.</p>
                 <Button variant="outline" className="mt-5">
                     Jetzt Karriere machen
                     <ArrowRight className="pl-2" />
@@ -202,7 +174,7 @@ const Page = () => {
                         </div>
                     </div>
                 </div>
-            
+
             </section>
 
             <section className="mt-20">

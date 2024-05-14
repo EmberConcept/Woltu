@@ -12,7 +12,8 @@ const Page = () => {
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mt-2">Kontaktieren Sie uns gerne. <br /> Wir helfen!</h1>
 
                 <div className="flex justify-center mt-2">
-                    <p className="max-w-prose text-muted-foreground">Füllen Sie einfach das Kontaktformular aus und unser Support-Team wird Ihnen binnen 24 Stunden Werktags eine Antwort per E-Mail zukommen lassen! Wir freuen uns auf Ihre Fragen.</p>
+                    <p className="max-w-prose text-muted-foreground">Füllen Sie einfach das Kontaktformular aus und unser Support-Team wird Ihnen binnen 24
+                        Stunden Werktags eine Antwort per E-Mail zukommen lassen! Wir freuen uns auf Ihre Fragen.</p>
                 </div>
             </section>
 
@@ -23,7 +24,7 @@ const Page = () => {
                         <Badge>Kontakt</Badge>
                         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Was benötigen wir von Ihnen?</h1>
                         <p className="text-muted-foreground mt-2">Damit Sie eine auf Sie ausgerichtete erste valide Einschötzung von uns erhalten können, benötigen wir von Ihnen folgende Angaben:</p>
-                        
+
                         <Separator className="mt-5" />
 
                         <div className="mt-5">

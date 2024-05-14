@@ -52,7 +52,7 @@ const Navbar = async () => {
                                 </Link>
                                 <Link href='/showroom' className={buttonVariants({
                                     size: 'sm', variant: 'ghost',
-                                })}>Showrrom
+                                })}>Showroom
                                 </Link>
                                 <Link href='/hersteller' className={buttonVariants({
                                     size: 'sm', variant: 'ghost',
@@ -66,7 +66,7 @@ const Navbar = async () => {
                                     size: 'sm', variant: 'ghost',
                                 })}>B2B
                                 </Link>
-                                <Link href='/' className={buttonVariants({
+                                <Link href='/#WoltuLive' className={buttonVariants({
                                     size: 'sm', variant: 'ghost',
                                 })}>WoltuEnergy Live
                                 </Link>

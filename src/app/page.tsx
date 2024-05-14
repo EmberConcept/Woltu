@@ -1,7 +1,7 @@
 'use client'
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowRight, Leaf, Mail, MapPin, Phone, Star, Zap } from "lucide-react";
+import { ArrowRight, Leaf, Mail, MapPin, Phone, Star, User, Zap } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -15,16 +15,17 @@ export default function Home() {
 
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <Reveal>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Willkommen bei <span className="text-primary">Woltu Energie.</span> Ein Ort für grüne Photovoltail-Innovationen.</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Willkommen bei <span className="text-primary">WOLTU Energy.</span> Ein Ort für grüne Photovoltaik-Innovation.</h1>
           </Reveal>
           <Reveal>
-            <p className="mt-6 text-lg max-w-prose text-muted-foreground">Besuchen Sie uns und erleben Sie unsere Mission, die darauf abzielt, innovative Lösungen für die Herausforderungen unserer Zeit zu entwickeln.</p>
+            <p className="mt-6 text-lg max-w-prose text-muted-foreground text-center">Besuchen Sie uns erleben einen Ort, an dem Technologie und Umweltbewusstsein
+              Hand in Hand gehen. Schauen Sie vorbei und erleben Sie unsere Mission hautnah.</p>
           </Reveal>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Reveal>
-              <Link href='/products' className={buttonVariants()}>Jetzt entdecken</Link>
+              <Link href='#start' className={buttonVariants()}>Jetzt entdecken</Link>
             </Reveal>
-            <Reveal><Button variant="outline">Termin vereinbaren <ArrowRight className="pl-2" /></Button></Reveal>
+            <Reveal><Button variant="outline"><Link href="/b2c" className="flex items-center gap-2">Termin vereinbaren <ArrowRight className="pl-2" /></Link></Button></Reveal>
           </div>
         </div>
 
@@ -50,13 +51,13 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className="w-full h-auto z-1000 relative">
           <Reveal>
-            <Image className="rounded-lg" src="/showroom.jpg" width={2264} height={1698} alt="Showroom" />
+            <Image className="rounded-lg" src="/img/Bild_1.jpg" width={6000} height={3374} alt="Showroom" />
           </Reveal>
 
         </div>
       </MaxWidthWrapper>
 
-      <section className="relative w-full bg-[url('/building.jpg')] bg-cover bg-center pt-32 pb-32 mt-20 -z-20">
+      <section className="relative w-full bg-[url('/img/Bild_2.JPG')] bg-cover bg-center pt-32 pb-32 mt-20 -z-20" id="start">
         <MaxWidthWrapper>
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#000000b0] to-[#0000] -z-10"></div>
 
@@ -82,8 +83,10 @@ export default function Home() {
                 <h1 className="mt-3 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Umweltfreundliche Energielösungen für eine grünere Zukunft</h1>
               </Reveal>
               <Reveal>
-                <p className="mt-3 text-lg max-w-prose text-muted-foreground">
-                  Unsere grünen Energieprodukte und -dienstleistungen bieten sowohl Umwelt- als auch wirtschaftliche Vorteile. Durch die Auswahl unserer Lösungen können Sie Ihren CO2-Fußabdruck reduzieren und gleichzeitig Geld bei den Energiekosten sparen.
+                <p className="mt-3 text-lg max-w-prose text-muted-foreground text-justify">
+                  Unsere grünen Energieprodukte und -dienstleistungen bieten sowohl Umwelt- als
+                  auch wirtschaftliche Vorteile. Durch die Auswahl unserer Lösungen können Sie Ihren
+                  CO2-Fußabdruck reduzieren und gleichzeitig Geld bei den Energiekosten sparen.
                 </p>
               </Reveal>
 
@@ -95,15 +98,15 @@ export default function Home() {
                       <Leaf className="w-8 h-8 text-primary"></Leaf>
                     </div>
                     <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Umweltauswirkungen</h3>
-                    <p className="mt-1 text-lg max-w-prose text-muted-foreground">
-                      Unsere grünen Energielösungen helfen dabei, Treibhausgasemissionen zu reduzieren</p>
+                    <p className="mt-1 text-lg max-w-prose text-muted-foreground text-justify">
+                      Unsere grünen Energie- lösungen helfen dabei, Treibhausgasemissionen zu reduzieren</p>
                   </div>
                   <div className="flex flex-col gap-2">
                     <div className="w-14 h-14 bg-gray-100 rounded-lg flex justify-center items-center">
                       <Zap className="w-8 h-8 text-primary"></Zap>
                     </div>
                     <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Koteneinspaarung</h3>
-                    <p className="mt-1 text-lg max-w-prose text-muted-foreground">
+                    <p className="mt-1 text-lg max-w-prose text-muted-foreground text-justify">
                       Der Wechsel zu grüner Energie kann Ihre Energierechnungen senken.</p>
                   </div>
                 </div>
@@ -111,13 +114,13 @@ export default function Home() {
 
               <div className="flex gap-2 mt-10">
                 <Reveal>
-                  <Link href='/products' className={buttonVariants()}>Jetzt entdecken</Link>
+                  <Link href='/hersteller' className={buttonVariants()}>Jetzt entdecken</Link>
                 </Reveal>
-                <Reveal><Button variant="outline">Termin vereinbaren <ArrowRight className="pl-2" /></Button></Reveal>
+                <Reveal><Button variant="outline"><Link href="/b2c" className="flex items-center gap-2">Termin vereinbaren <ArrowRight className="pl-2" /></Link></Button></Reveal>
               </div>
             </div>
 
-            <div className="w-full bg-[url('/showroom_2.jpg')] bg-cover bg-center h-auto min-h-96 rounded-lg">
+            <div className="w-full bg-[url('/img/Bild_3.JPG')] bg-cover bg-center h-auto min-h-96 rounded-lg">
             </div>
 
           </div>
@@ -135,55 +138,90 @@ export default function Home() {
             </Reveal>
             <div className="w-full flex items-center justify-center">
               <Reveal>
-                <p className="mt-2 text-lg max-w-prose text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore consectetur nihil esse neque magnam culpa vero at laboriosam et.</p>
+                <p className="mt-2 text-lg max-w-prose text-muted-foreground">Unsere zufriedenen Kunden loben besonders unsere schnelle und zuverlässige Abwicklung.
+                  Wir freuen uns, Ihnen stets den bestmöglichen Service bieten zu können.</p>
               </Reveal>
             </div>
 
             <Separator className="mt-5" />
           </div>
           <div className="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2">
-            <div className="relative bg-[url('/baustelle_1.jpg')] bg-cover bg-center w-full h-96 rounded-lg flex flex-col justify-end p-5">
-              <div className="absolute w-full top-0 left-0 h-full bg-gradient-to-t from-[#000000b0] to-[#0000] rounded-lg z-0"></div>
-              <div className="flex justify-between items-end z-10">
-                <div>
-                  <Reveal>
-                    <h3 className="text-md mt-2 font-bold text-white md:text-lg">Baustelle Solingen</h3>
-                  </Reveal>
-                  <Reveal>
-                    <p className="text-sm max-w-prose text-opacity-70 text-white">Auftrag: 23.04.2024</p>
-                  </Reveal>
+            <Reveal>
+              <div className="border-muted rounded-lg border">
+                <Image className="rounded-t-lg h-96" src="/img/Bild_18.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+                <div className="p-5">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
+                      <User className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="tracking-tighter">
+                      <p className="text-muted-foreground">Kunde</p>
+                      <p>Marion W.</p>
+                    </div>
+                  </div>
+                  <Separator className="mt-5" />
+                  <p className="mt-5 text-muted-foreground">Danke, Woltu Energy! Schnelle Installation, tolles Ergebnis. Wir empfehlen
+                    euch gerne weiter!</p>
                 </div>
-                <Button variant="outline" className="flex items-center gap-2">
-                  <Reveal>
-                    <p>Anschauen</p>
-                  </Reveal>
-                  <Reveal>
-                    <ArrowRight className="w-5 h-5"></ArrowRight>
-                  </Reveal>
-                </Button>
               </div>
-            </div>
-            <div className="relative bg-[url('/baustelle_2.jpg')] bg-cover bg-center w-full h-96 rounded-lg flex flex-col justify-end p-5">
-              <div className="absolute w-full top-0 left-0 h-full bg-gradient-to-t from-[#000000b0] to-[#0000] rounded-lg z-0"></div>
-              <div className="flex justify-between items-end z-10">
-                <div>
-                  <Reveal>
-                    <h3 className="text-md mt-2 font-bold text-white md:text-lg">Baustelle Bayern</h3>
-                  </Reveal>
-                  <Reveal>
-                    <p className="text-sm max-w-prose text-opacity-70 text-white">Auftrag: 23.04.2024</p>
-                  </Reveal>
+            </Reveal>
+            <Reveal>
+              <div className="border-muted rounded-lg border">
+                <Image className="rounded-t-lg h-96" src="/img/Bild_19.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+                <div className="p-5">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
+                      <User className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="tracking-tighter">
+                      <p className="text-muted-foreground">Kunde</p>
+                      <p>Elfriede und Harald N.</p>
+                    </div>
+                  </div>
+                  <Separator className="mt-5" />
+                  <p className="mt-5 text-muted-foreground">Woltu Energy hat unsere Erwartungen übertroffen! Tolle Arbeit,
+                    tolles Ergebnis!</p>
                 </div>
-                <Button variant="outline" className="flex items-center gap-2">
-                  <Reveal>
-                    <p>Anschauen</p>
-                  </Reveal>
-                  <Reveal>
-                    <ArrowRight className="w-5 h-5"></ArrowRight>
-                  </Reveal>
-                </Button>
               </div>
-            </div>
+            </Reveal>
+            <Reveal>
+              <div className="border-muted rounded-lg border">
+                <Image className="rounded-t-lg h-96" src="/img/Bild_20.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+                <div className="p-5">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
+                      <User className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="tracking-tighter">
+                      <p className="text-muted-foreground">Kunde</p>
+                      <p>Stefan G.</p>
+                    </div>
+                  </div>
+                  <Separator className="mt-5" />
+                  <p className="mt-5 text-muted-foreground">Top Beratung, professionelle Installation, und unsere Photovoltaikanlage läuft
+                    einwandfrei. Danke, Woltu Energy!</p>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal>
+              <div className="border-muted rounded-lg border">
+                <Image className="rounded-t-lg h-96" src="/img/Bild_21.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+                <div className="p-5">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
+                      <User className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="tracking-tighter">
+                      <p className="text-muted-foreground">Kunde</p>
+                      <p>Manu M.</p>
+                    </div>
+                  </div>
+                  <Separator className="mt-5" />
+                  <p className="mt-5 text-muted-foreground">Sehr gute Projektierung, Professionelles Team, reibungslose Installation, und unsere
+                    neue Photovoltaikanlage läuft perfekt. Sehr zufrieden!</p>
+                </div>
+              </div>
+            </Reveal>
 
           </div>
         </MaxWidthWrapper>
@@ -194,34 +232,42 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <Reveal>
-                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-5">Long heading is what sets us <span className="text-primary">apart in this feature</span> section.</h1>
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-5">Nachhaltige Energie für Ihr Zuhause: <span className="text-primary">
+                  Entdecken
+                  Sie die Vorteile
+                </span> unserer Photovoltaik-Lösungen!</h1>
               </Reveal>
             </div>
             <div>
               <Reveal>
-                <p className="mt-2 text-lg max-w-prose text-muted-foreground">Unser Unternehmen ist darauf spezialisiert, grüne Energielösungen anzubieten, die zu einer nachhaltigeren Zukunft beitragen. Mit unserer innovativen Technologie und unserem Engagement für Energieeffizienz helfen wir Kunden, Geld zu sparen, während sie ihren CO2-Fußabdruck reduzieren.</p>
+                <p className="mt-2 text-lg max-w-prose text-muted-foreground text-justify">Entscheiden Sie sich für eine Photovoltaikanlage von Woltu Energy und reduzieren Sie Ihre CO2-
+                  Emissionen erheblich. Gleichzeitig senken Sie Ihre Stromkosten deutlich. Investieren Sie in
+                  erneuerbare Energien und profitieren Sie von langfristigen Kosteneinsparungen sowie einem
+
+                  nachhaltigeren Lebensstil. Kontaktieren Sie uns noch heute, um mehr über unsere Photovoltaik-
+                  Lösungen zu erfahren und ein maßgeschneidertes Angebot zu erhalten!</p>
               </Reveal>
               <div className="mt-10 grid grid-cols-2 gap-10">
                 <div>
                   <Reveal>
                     <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                      <p>50%</p>
+                      <p>bis zu <span className="text-primary">80%</span></p>
                     </h1>
                   </Reveal>
                   <Reveal>
                     <p className="mt-2 text-lg max-w-prose text-muted-foreground">
-                      Energieeinsparungen durch unsere Lösungen</p>
+                      Kostenersparnis</p>
                   </Reveal>
                 </div>
                 <div>
                   <Reveal>
                     <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                      <p>50%</p>
+                      <p>bis zu <span className="text-primary">80%</span></p>
                     </h1>
                   </Reveal>
                   <Reveal>
                     <p className="mt-2 text-lg max-w-prose text-muted-foreground">
-                      Energieeinsparungen durch unsere Lösungen</p>
+                      Reduzierung CO2-Emission</p>
                   </Reveal>
                 </div>
               </div>
@@ -244,7 +290,7 @@ export default function Home() {
             </Reveal>
             <div className="w-full flex items-center justify-center">
               <Reveal>
-                <p className="mt-2 text-lg max-w-prose text-white/75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore consectetur nihil esse neque magnam culpa vero at laboriosam et.</p>
+                <p className="mt-2 text-lg max-w-prose text-white/75">Eine Entdeckungsreise durch unser Unternehmen.</p>
               </Reveal>
             </div>
           </div>
@@ -274,123 +320,29 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="mt-20">
+      <section className="mt-20" id="WoltuLive">
         <MaxWidthWrapper>
           <div className="mx-auto text-center flex items-center justify-center flex-col">
             <Reveal>
-              <Badge>Woltu Energy Live</Badge>
+              <Badge className="text-xl pl-5 pr-5">Woltu Energy Live</Badge>
             </Reveal>
-            <Reveal>
-              <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-5">Erfahrungen und Expertisen</h1>
-            </Reveal>
-            <div className="w-full flex items-center justify-center">
-              <Reveal>
-                <p className="mt-2 text-lg max-w-prose text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore consectetur nihil esse neque magnam culpa vero at laboriosam et.</p>
-              </Reveal>
-            </div>
           </div>
 
-          <div className="md:columns-2 lg:columns-2 gap-6 p-4 sm:p-1 mt-10">
-            <div className="flex flex-col space-y-2 break-inside-avoid mt-5">
-              <Reveal>
-                <Image className="rounded-lg" src="/baustelle_1.jpg" width={2048} height={2048} alt="Baustelle"></Image>
-              </Reveal>
-              <div className="mt-5">
-                <Reveal>
-                  <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Photovoltaik - Dach</h3>
-                </Reveal>
-                <Reveal>
-                  <p className="text-lg max-w-prose text-muted-foreground">Installation of solar panels for residential and commercial properties</p>
-                </Reveal>
-                <div className="flex items-center gap-2 mt-3">
-                  <Reveal>
-                    <Badge variant="outline">Renewable</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Energy</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Sustainability</Badge>
-                  </Reveal>
-                </div>
-                <Reveal><Button variant="outline" className="mt-5">Projekt Anschauen <ArrowRight className="pl-2"></ArrowRight></Button></Reveal>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-2 break-inside-avoid mt-5">
-              <Reveal>
-                <Image className="rounded-lg" src="/baustelle_1.jpg" width={2048} height={2048} alt="Baustelle"></Image>
-              </Reveal>
-              <div className="mt-5">
-                <Reveal>
-                  <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Photovoltaik - Dach</h3>
-                </Reveal>
-                <Reveal>
-                  <p className="text-lg max-w-prose text-muted-foreground">Installation of solar panels for residential and commercial properties</p>
-                </Reveal>
-                <div className="flex items-center gap-2 mt-3">
-                  <Reveal>
-                    <Badge variant="outline">Renewable</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Energy</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Sustainability</Badge>
-                  </Reveal>
-                </div>
-                <Reveal><Button variant="outline" className="mt-5">Projekt Anschauen <ArrowRight className="pl-2"></ArrowRight></Button></Reveal>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-2 break-inside-avoid mt-5">
-              <Reveal>
-                <Image className="rounded-lg" src="/baustelle_1.jpg" width={2048} height={2048} alt="Baustelle"></Image>
-              </Reveal>
-              <div className="mt-5">
-                <Reveal>
-                  <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Photovoltaik - Dach</h3>
-                </Reveal>
-                <Reveal>
-                  <p className="text-lg max-w-prose text-muted-foreground">Installation of solar panels for residential and commercial properties</p>
-                </Reveal>
-                <div className="flex items-center gap-2 mt-3">
-                  <Reveal>
-                    <Badge variant="outline">Renewable</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Energy</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Sustainability</Badge>
-                  </Reveal>
-                </div>
-                <Reveal><Button variant="outline" className="mt-5">Projekt Anschauen <ArrowRight className="pl-2"></ArrowRight></Button></Reveal>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-2 break-inside-avoid mt-5">
-              <Reveal>
-                <Image className="rounded-lg" src="/baustelle_1.jpg" width={2048} height={2048} alt="Baustelle"></Image>
-              </Reveal>
-              <div className="mt-5">
-                <Reveal>
-                  <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Photovoltaik - Dach</h3>
-                </Reveal>
-                <Reveal>
-                  <p className="text-lg max-w-prose text-muted-foreground">Installation of solar panels for residential and commercial properties</p>
-                </Reveal>
-                <div className="flex items-center gap-2 mt-3">
-                  <Reveal>
-                    <Badge variant="outline">Renewable</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Energy</Badge>
-                  </Reveal>
-                  <Reveal>
-                    <Badge variant="outline">Sustainability</Badge>
-                  </Reveal>
-                </div>
-                <Reveal><Button variant="outline" className="mt-5">Projekt Anschauen <ArrowRight className="pl-2"></ArrowRight></Button></Reveal>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
+            <Reveal>
+              <Image className="rounded-lg" src="/img/Bild_4.jpg" width={2048} height={2048} alt="Baustelle"></Image>
+            </Reveal>
+            <Reveal>
+              <Image className="rounded-lg" src="/img/Bild_5.jpg" width={2048} height={2048} alt="Baustelle"></Image>
+            </Reveal>
+            <Reveal>
+              <Image className="rounded-lg" src="/img/Bild_6.jpg" width={2048} height={2048} alt="Baustelle"></Image>
+            </Reveal>
+            <Reveal>
+              <Image className="rounded-lg" src="/img/Bild_7.jpg" width={2048} height={2048} alt="Baustelle"></Image>
+            </Reveal>
+
+
           </div>
         </MaxWidthWrapper>
       </section>
@@ -422,7 +374,7 @@ export default function Home() {
                       <p className="font-bold text-gray-900">E-mail</p>
                     </Reveal>
                     <Reveal>
-                      <p className="text-muted-foreground">info@woltu-energy.com</p>
+                      <p className="text-muted-foreground">info@woltuenergy.com</p>
                     </Reveal>
                   </div>
                 </Reveal>
@@ -438,7 +390,7 @@ export default function Home() {
                     <p className="font-bold text-gray-900">Telefon</p>
                   </Reveal>
                   <Reveal>
-                    <p className="text-muted-foreground">+49 0151 257 1275</p>
+                    <p className="text-muted-foreground">+49 212 23283497</p>
                   </Reveal>
                 </div>
               </div>
@@ -453,7 +405,7 @@ export default function Home() {
                     <p className="font-bold text-gray-900">Standort</p>
                   </Reveal>
                   <Reveal>
-                    <p className="text-muted-foreground">124 Solingen, Hessen - Deutschland</p>
+                    <p className="text-muted-foreground">Dellenfeld 25 I 42653 Solingen</p>
                   </Reveal>
                 </div>
               </div>

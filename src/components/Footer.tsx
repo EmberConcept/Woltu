@@ -1,7 +1,7 @@
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
 import ItemsContainer from "./ItemsContainer"
-import { ArrowRight, CornerRightUp, Instagram } from "lucide-react"
+import { ArrowRight, CornerRightUp } from "lucide-react"
 import { Button, buttonVariants } from "./ui/button"
 
 const Footer = () => {

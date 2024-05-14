@@ -49,21 +49,15 @@ const Page = () => {
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Lerne unser Team kennen.</h1>
                 <p className="mt-2 text-muted-foreground max-w-prose">Machen Sie sich mit dem engagierten Team von Woltu Energy vertraut, das sich leidenschaftlich für erneuerbare Energien und eine nachhaltige Zukunft einsetzt.</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-10 bg-gray-100 border border-gray-200 rounded-lg p-10">
                     <div className="flex flex-col gap-2">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_9.jpg" width={4096} height={4096} alt="Team"></Image>
                         <div>
                             <p className="font-semibold">Zeljko Busić</p>
                             <p>Management</p>
                         </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
+                        
+                        
                     </div>
                     <div className="flex flex-col gap-2">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_10.jpg" width={3966} height={3966} alt="Team"></Image>
@@ -71,14 +65,8 @@ const Page = () => {
                             <p className="font-semibold">Marcus Carl</p>
                             <p>Vertrieb / Marketing</p>
                         </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
+                        
+                        
                     </div>
                     <div className="flex flex-col gap-2">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_11.jpg" width={3597} height={3597} alt="Team"></Image>
@@ -86,14 +74,8 @@ const Page = () => {
                             <p className="font-semibold">Stefan Striehn</p>
                             <p>Einkauf</p>
                         </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
+                        
+                        
                     </div>
                     <div className="flex flex-col gap-2">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_12.jpg" width={4096} height={4096} alt="Team"></Image>
@@ -101,14 +83,7 @@ const Page = () => {
                             <p className="font-semibold">Marcel Peters</p>
                             <p>DC Spezialist</p>
                         </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
+                        
                     </div>
                     <div className="flex flex-col gap-2">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_17.jpg" width={3405} height={3405} alt="Team"></Image>
@@ -116,14 +91,8 @@ const Page = () => {
                             <p className="font-semibold">Guido Groß</p>
                             <p>AC Spezialist</p>
                         </div>
-                        <div>
-                            <p className="text-muted-foreground">Beispiel Text für Mitarbeiter.</p>
-                        </div>
-                        <div className="flex items-center gap-5">
-                            <Button variant="outline">
-                                <Mail className="w-5 h-5" />
-                            </Button>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </section>

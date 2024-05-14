@@ -1,44 +1,43 @@
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
-import Image from "next/image"
+import ItemsContainer from "./ItemsContainer"
+import { ArrowRight, CornerRightUp, Instagram } from "lucide-react"
+import { Button, buttonVariants } from "./ui/button"
 
 const Footer = () => {
     return (
         <>
-            <div className="w-full pt-10 pb-10 bg-gray-100 mt-20">
+            <footer className="bg-gradient-to-r from-primary to-green-700 text-white mt-20">
+                <div className=" bg-gray-100 border border-t border-gray-200">
+                    <MaxWidthWrapper>
+                        <div className="lg:flex lg:justify-between lg:items-center sm:px-12 px-4 py-7 gap-5">
+                            <h1
+                                className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl w-3/5"
+                            >
+                                Werde Teil der Veränderung mit <span className="text-primary">Woltu Energy</span> - Kontaktiere uns.
+                            </h1>
+                            <div className="mt-5 md:mt-5 lg:mt-0 flex items-center gap-5">
+                                <Button variant="outline" className="text-gray-900"><Link href="/b2c" className="flex items-center gap-2">Termin vereinbaren <ArrowRight className="pl-2" /></Link></Button>
+                                <Link href='/#start' className={buttonVariants()}>Jetzt entdecken</Link>
+                            </div>
+                        </div>
+                    </MaxWidthWrapper>
+                </div>
                 <MaxWidthWrapper>
-                    <div className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-10 lg:grid-cols-4 lg:gap-20">
-                        <div>
-                            <Image className="w-32" src="/logo.png" width={1072} height={289} alt="WoltuLogo" />
-                            <p className="mt-5 text-muted-foreground">Gemeinsam für eine nachhaltige Zukunft.</p>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold">Unternehmen</h3>
-                            <div className="mt-2 flex flex-col gap-1 text-muted-foreground">
-                                <Link href="/">Showroom</Link>
-                                <Link href="/">Über uns</Link>
-                                <Link href="/">Erfahrungen</Link>
-                                <Link href="/">Kontakt</Link>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold">Kontakt</h3>
-                            <div className="mt-2 flex flex-col gap-1 text-muted-foreground">
-                                <Link href="/">info@woltu-energy.de</Link>
-                                <Link href="/">02751 7127 712</Link>
-                                <Link href="/">Solingen</Link>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold">Rechtliches</h3>
-                            <div className="mt-2 flex flex-col gap-1 text-muted-foreground">
-                                <Link href="/">Impressum</Link>
-                                <Link href="/">Datenschutzerklärung</Link>
-                            </div>
+                    <ItemsContainer />
+                    <div
+                        className="flex items-center justify-between text-gray-400 text-sm pb-8"
+                    >
+                        <span>© 2024 Ember Concept. All rights reserved.</span>
+                        <div className="cursor-pointer transition-all hover:text-gray-100">
+                            <Link href="#" className="flex items-center gap-2">
+                                <p>Nach Oben</p>
+                                <CornerRightUp className="pl-2" />
+                            </Link>
                         </div>
                     </div>
                 </MaxWidthWrapper>
-            </div>
+            </footer >
         </>
     )
 }

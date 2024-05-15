@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const Page = () => {
     return (
@@ -31,8 +32,10 @@ const Page = () => {
                             Komponenten Ihrer Photovoltaikanlage von Top-Herstellern und sorgt für kürzeste Lieferzeiten bei
                             unseren Kunden.</p>
                         <Button variant="outline" className="mt-2">
-                            Hersteller anschauen
-                            <ArrowRight className="pl-2" />
+                            <Link href="/hersteller" className="flex items-center gap-2">
+                                Hersteller anschauen
+                                <ArrowRight className="pl-2" />
+                            </Link>
                         </Button>
                     </div>
                 </div>

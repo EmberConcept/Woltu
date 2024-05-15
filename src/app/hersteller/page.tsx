@@ -52,23 +52,11 @@ const Page = () => {
                                 </Link>
                             </Button>
                         </div>
-                        <div className="border-muted border-2 p-8 rounded-lg flex flex-col justify-between">
-                            <div>
-                                <Image src="/img/Bild_24.jpg" width={650} height={850} alt="Set 3"></Image>
-                                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-5">Premium Set</h1>
-                                <p className="text-muted-foreground mt-2 text-justify">AIKO Module, Gewinner des RedDot Design Awards 2023, sind nicht nur die schönsten, sondern auch leistungsstärksten Module auf dem Markt. In Kombination mit den Mikrowechselrichtern von Enphase erzielen sie Spitzenleistungen und maximale Erträge für Ihre Solaranlage.</p>
-                            </div>
-                            <Button className="mt-5 w-full">
-                                <Link href="/b2c" className="flex items-center gap-2">
-                                    Zum Angebot
-                                    <ArrowRight className="pl-2" />
-                                </Link>
-                            </Button>
-                        </div>
+
                         <div className="border-muted border-2 p-8 rounded-lg flex flex-col justify-between">
                             <div>
                                 <Image src="/img/Bild_25.jpg" width={650} height={850} alt="Set 4"></Image>
-                                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-5">High-End Set</h1>
+                                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-5">Premium Set</h1>
                                 <p className="text-muted-foreground mt-2 text-justify">Fronius, als österreichischer Hersteller von Wechselrichtern, und BYD, renommierter Batteriehersteller, bilden ein perfekt aufeinander abgestimmtes System. Tests der Hochschule für Technik und Wirtschaft HTW-Berlin haben ihre Kombination als Testsieger hervorgehoben, was maximale Leistung und Ertrag gewährleistet.</p>
                             </div>
                             <Button className="mt-5 w-full">
@@ -78,6 +66,21 @@ const Page = () => {
                                 </Link>
                             </Button>
                         </div>
+
+                        <div className="border-muted border-2 p-8 rounded-lg flex flex-col justify-between">
+                            <div>
+                                <Image src="/img/Bild_24.jpg" width={650} height={850} alt="Set 3"></Image>
+                                <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-5">High-End Set</h1>
+                                <p className="text-muted-foreground mt-2 text-justify">AIKO Module, Gewinner des RedDot Design Awards 2023, sind nicht nur die schönsten, sondern auch leistungsstärksten Module auf dem Markt. In Kombination mit den Mikrowechselrichtern von Enphase erzielen sie Spitzenleistungen und maximale Erträge für Ihre Solaranlage.</p>
+                            </div>
+                            <Button className="mt-5 w-full">
+                                <Link href="/b2c" className="flex items-center gap-2">
+                                    Zum Angebot
+                                    <ArrowRight className="pl-2" />
+                                </Link>
+                            </Button>
+                        </div>
+
                     </div>
                 </section>
             </MaxWidthImageWrapper>

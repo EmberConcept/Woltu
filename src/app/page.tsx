@@ -105,7 +105,7 @@ export default function Home() {
                     <div className="w-14 h-14 bg-gray-100 rounded-lg flex justify-center items-center">
                       <Zap className="w-8 h-8 text-primary"></Zap>
                     </div>
-                    <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Koteneinspaarung</h3>
+                    <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Kosteneinspaarung</h3>
                     <p className="mt-1 text-lg max-w-prose text-muted-foreground text-justify">
                       Der Wechsel zu grüner Energie kann Ihre Energierechnungen senken.</p>
                   </div>

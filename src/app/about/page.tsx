@@ -124,21 +124,21 @@ const Page = () => {
                     <div>
                         <Separator />
                         <div className="grid grid-cols-1 md:grid-cols-3 mt-5">
-                            <p className="font-semibold col-span-1/2">Sind Solarpaneele teuer?</p>
+                            <p className="font-semibold col-span-1/2">Sind Solarpanele teuer?</p>
                             <p className="text-muted-foreground col-span-2">Obwohl die anfänglichen Kosten für die Installation von Solarpaneelen hoch sein können, können sie Ihnen langfristig Geld sparen. Solarpaneele können Ihre Stromrechnungen erheblich reduzieren, indem sie Ihre eigene saubere Energie erzeugen. Darüber hinaus gibt es verschiedene staatliche Anreize und Finanzierungsmöglichkeiten, um Solarpaneele erschwinglicher zu machen.</p>
                         </div>
                     </div>
                     <div>
                         <Separator />
                         <div className="grid grid-cols-1 md:grid-cols-3 mt-5">
-                            <p className="font-semibold col-span-1/2">Wie lange halten Solarpaneele?</p>
-                            <p className="text-muted-foreground col-span-2">Solarpaneele sind darauf ausgelegt, langlebig zu sein und können 25 bis 30 Jahre oder länger halten. Regelmäßige Wartung und Reinigung können zu ihrer Langlebigkeit beitragen. Darüber hinaus bieten die meisten Hersteller von Solarpanelen Garantien an, die etwaige Mängel oder Leistungsprobleme während der Lebensdauer der Paneele abdecken.</p>
+                            <p className="font-semibold col-span-1/2">Wie lange halten Solarpanele?</p>
+                            <p className="text-muted-foreground col-span-2">Solarpanele sind darauf ausgelegt, langlebig zu sein und können 25 bis 30 Jahre oder länger halten. Regelmäßige Wartung und Reinigung können zu ihrer Langlebigkeit beitragen. Darüber hinaus bieten die meisten Hersteller von Solarpanelen Garantien an, die etwaige Mängel oder Leistungsprobleme während der Lebensdauer der Paneele abdecken.</p>
                         </div>
                     </div>
                     <div>
                         <Separator />
                         <div className="grid grid-cols-1 md:grid-cols-3 mt-5">
-                            <p className="font-semibold col-span-1/2">Können Solarpaneele bei bewölktem Wetter funktionieren?</p>
+                            <p className="font-semibold col-span-1/2">Können Solarpanele bei bewölktem Wetter funktionieren?</p>
                             <p className="text-muted-foreground col-span-2">Obwohl Solarpaneele bei direktem Sonnenlicht am effektivsten sind, können sie auch an bewölkten Tagen Strom erzeugen. Bewölktes Wetter reduziert die Menge an Sonnenlicht, das die Paneele erreicht, aber sie können dennoch eine bedeutende Menge an Strom erzeugen. Darüber hinaus haben Fortschritte in der Solartechnologie die Paneele effizienter gemacht, um Sonnenlicht auch unter schlechten Lichtverhältnissen in Strom umzuwandeln.</p>
                         </div>
                     </div>

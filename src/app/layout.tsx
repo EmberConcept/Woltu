@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Woltu Homepage",
+  title: "Woltu Energy Homepage",
   description: "Willkommen auf der Woltu ENERGY Homepage, ein Ort für grüne Photovoltaik-Innovation.",
 };
 

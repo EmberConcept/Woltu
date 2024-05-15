@@ -48,7 +48,7 @@ const Page = () => {
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Besuchen Sie uns.</h1>
                 <p className="mt-2 text-muted-foreground">Erkunden Sie unsere Firma Woltu Energy vor Ort im schönen Solingen.</p>
 
-                <div className="mt-10 grid grid-cols-1 md:grid-cols-3">
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
                     <div className="col-span-1/2 flex flex-col gap-10">
                         <div className="flex flex-col gap-2">
                             <div className="w-14 h-14 rounded-lg flex items-center justify-center bg-gray-100">
@@ -78,14 +78,16 @@ const Page = () => {
                             <div>
                                 <p className="text-muted-foreground">Dellenfeld 25 I 42653 Solingen</p>
                                 <Button variant="outline" className="mt-2">
-                                    Route planen
-                                    <ArrowRight className="pl-2" />
+                                    <Link target="_blank" className="flex items-center gap-2" href="https://www.google.de/maps/dir//Dellenfeld+25,+42653+Solingen/@51.2010284,7.0812144,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47b8d414012322df:0xb0f28ca3db0edfe2!2m2!1d7.0830791!2d51.2008372!3e0?entry=ttu">
+                                        Route planen
+                                        <ArrowRight className="pl-2" />
+                                    </Link>
                                 </Button>
                             </div>
                         </div>
                     </div>
                     <div className="col-span-2">
-                        <div className="w-full h-full bg-gray-100 rounded-lg"></div>
+                        <div className="w-full min-h-96 h-full bg-[url('/Maps.png')] bg-cover bg-center rounded-lg"></div>
                     </div>
                 </div>
             </section>

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import MaxWidthWrapper from "./MaxWidthWrapper"
 import ItemsContainer from "./ItemsContainer"
-import { ArrowRight, CornerRightUp } from "lucide-react"
+import { ArrowRight, ArrowUp, CornerRightUp } from "lucide-react"
 import { Button, buttonVariants } from "./ui/button"
 
 const Footer = () => {
@@ -26,14 +26,15 @@ const Footer = () => {
                 <MaxWidthWrapper>
                     <ItemsContainer />
                     <div
-                        className="flex items-center justify-between text-gray-400 text-sm pb-8"
+                        className="flex flex-col items-start sm:flex-col gap-5 md:flex-row md:items-center  md:justify-between text-gray-400 text-sm pb-8"
                     >
                         <span>© 2024 Ember Concept. All rights reserved.</span>
                         <div className="cursor-pointer transition-all hover:text-gray-100">
-                            <Link href="#" className="flex items-center gap-2">
-                                <p>Nach Oben</p>
-                                <CornerRightUp className="pl-2" />
-                            </Link>
+                            <Button variant="outline">
+                                <Link href="#" className="flex items-center">
+                                    <ArrowUp className="w-5 h-5" />
+                                </Link>
+                            </Button>
                         </div>
                     </div>
                 </MaxWidthWrapper>

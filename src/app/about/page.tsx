@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { ArrowRight, Ghost, Mail } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 
 const Page = () => {
@@ -25,7 +26,7 @@ const Page = () => {
                     Photovoltaikbranche, unseren Weg in die Welt des nachhaltigen Energieumbruchs wagten. Doch
                     unsere Jugendlichkeit täuscht nicht über unsere tief verwurzelte Kompetenz hinweg. Jeder
                     unserer Mitarbeiter bringt eine Fülle an Erfahrungen mit, die sie über Jahre in der Branche
-                    gesammelt haben. Bei der Woltu Energy GmbH finden sie endlich, was sie in ihren vorherigen
+                    gesammelt haben. Bei der Woltu Energy GmbH finden Sie endlich, was sie in Ihren vorherigen
                     Unternehmen vermisst haben.
                     Unsere Stärke liegt nicht nur in unserem Wissen, sondern auch in unserem umfassenden
                     Netzwerk. Wir haben Zugang zu den führenden Herstellern von Komponenten und sind Experten
@@ -53,7 +54,7 @@ const Page = () => {
                     <div className="flex flex-col gap-2">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_9.jpg" width={4096} height={4096} alt="Team"></Image>
                         <div>
-                            <p className="font-semibold">Zeljko Busić</p>
+                            <p className="font-semibold">Željko Busić</p>
                             <p>Management</p>
                         </div>
                         
@@ -102,8 +103,10 @@ const Page = () => {
                 <p className="mt-2 text-muted-foreground max-w-prose text-justify">Wir suchen nach motivierten Mitarbeitern, die sich mit unserer Unternehmensphilosophie
                     identifizieren und aktiv dazu beitragen möchten.</p>
                 <Button variant="outline" className="mt-5">
-                    Jetzt Karriere machen
-                    <ArrowRight className="pl-2" />
+                    <Link href="mailto:info@woltu-energy.com" className="flex items-center">
+                        Jetzt Karriere machen
+                        <ArrowRight className="pl-2" />
+                    </Link>
                 </Button>
             </section>
 
@@ -148,10 +151,12 @@ const Page = () => {
 
             <section className="mt-20">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Immer noch Fragen?</h1>
-                <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns gerne, und wir werden deine offenen Fragen gerne klären.</p>
+                <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns , und wir werden deine offenen Fragen gerne klären.</p>
                 <Button variant="outline" className="mt-5">
-                    Kontakt aufnehmen
-                    <ArrowRight className="pl-2" />
+                    <Link href="/b2c" className="flex items-center">
+                        Kontakt aufnehmen
+                        <ArrowRight className="pl-2" />
+                    </Link>
                 </Button>
             </section>
         </MaxWidthWrapper>

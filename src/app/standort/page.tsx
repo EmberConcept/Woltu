@@ -12,7 +12,7 @@ const Page = () => {
             <section className="mt-20 text-center flex flex-col items-center">
                 <Badge>Unser Hauptquatier</Badge>
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mt-5">Standort Solingen</h1>
-                <p className="text-muted-foreground max-w-prose mt-5 text-justify">Willkommen im Herzen von Woltu Energie – unser Headquarter in Solingen strahlt
+                <p className="text-muted-foreground max-w-prose mt-5 text-justify">Willkommen im Herzen von Woltu Energy – unser Headquarter in Solingen strahlt
                     Innovationskraft und Nachhaltigkeit aus. Hier werden visionäre Ideen geboren und umgesetzt, um
                     eine grünere Zukunft zu gestalten. Ein Ort, an dem Technologie und Umweltbewusstsein Hand in
                     Hand gehen. Schauen Sie vorbei und erleben Sie unsere Mission hautnah.</p>
@@ -66,7 +66,7 @@ const Page = () => {
                             </div>
                             <h3 className="text-xl font-bold tracking-tight text-gray-900 sm:text-xl mt-2">Telefom</h3>
                             <div>
-                                <p className="text-muted-foreground">Kundensupport Werktags bis 18 Uhr.</p>
+                                <p className="text-muted-foreground">Kundensupport werktags bis 18 Uhr.</p>
                                 <p>+49 212 23283497</p>
                             </div>
                         </div>
@@ -140,7 +140,7 @@ const Page = () => {
 
             <section className="mt-20">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Immer noch Fragen?</h1>
-                <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns gerne, und wir werden deine offenen Fragen gerne klären.</p>
+                <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns , und wir werden deine offenen Fragen gerne klären.</p>
                 <Button variant="outline" className="mt-5">
                     Kontakt aufnehmen
                     <ArrowRight className="pl-2" />

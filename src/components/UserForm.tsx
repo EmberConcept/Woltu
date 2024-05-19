@@ -30,9 +30,10 @@ import {
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { ArrowRight } from "lucide-react"
+import { sendEmail } from "@/actions/sendEmail"
 
 const formSchema = z.object({
-    name: z.string().min(5, {
+    firstname: z.string().min(5, {
         message: "Username must be at least 5 characters"
     }),
     email: z
@@ -58,7 +59,8 @@ const formSchema = z.object({
     }),
     topic: z.string().min(5, {
         message: "Die Eingabe muss mindestens aus 5 Ziffern bestehen."
-    })
+    }),
+    picture: z.string().nullable(),
 
 })
 
@@ -67,18 +69,34 @@ export function UserForm() {
         resolver: zodResolver(formSchema),
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values)
-    }
 
-    const [position, setPosition] = React.useState("bottom")
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault(); // Verhindert das Standardverhalten des Formulars (Seiten-Neuladen)
+
+        // Die Nutzereingaben aus den Formularfeldern abgreifen
+        const formData = new FormData(e.currentTarget);
+        const firstname = formData.get('firstname') as string;
+        const email = formData.get('email') as string;
+        const location = formData.get('location') as string;
+        const village = formData.get('village') as string;
+        const region = formData.get('region') as string;
+        const message = formData.get('message') as string;
+        const postal = formData.get('postal') as string;
+        const phone = formData.get('phone') as string;
+        const topic = formData.get('topic') as string;
+        // Hier kannst du sicherstellen, dass die Daten korrekt sind, bevor du die E-Mail sendest
+        const result = await sendEmail({ firstname, email, location, village, region, postal, phone, topic, message });
+
+        // Hier kannst du das Ergebnis der E-Mail-Sendung verarbeiten
+        console.log(result);
+    };
 
     return (
         <Form {...form}>
-            <form className="space-y-4 border-muted border-2 p-8 rounded-lg" onSubmit={form.handleSubmit(onSubmit)}>
+            <form className="space-y-4 border-muted border-2 p-8 rounded-lg" onSubmit={handleSubmit}>
                 <FormField
                     control={form.control}
-                    name="name"
+                    name="firstname"
                     render={({ field }) => (
                         <FormItem>
                             <FormLabel>Personalien</FormLabel>
@@ -223,15 +241,27 @@ export function UserForm() {
 
                 <div className="grid w-full gap-5">
                     <Label htmlFor="message">Nachricht</Label>
-                    <Textarea placeholder="Schreiben Sie Ihre Nachricht hier.." id="message" />
+                    <Textarea name="message" placeholder="Schreiben Sie Ihre Nachricht hier.." id="message" />
                 </div>
 
                 <div className="grid w-full max-w-sm items-center gap-1.5">
-                    <Label htmlFor="picture">Datein hochladen</Label>
-                    <Input id="picture" type="file" />
+                    <Label htmlFor="picture">Dateien hochladen</Label>
+                    <Input id="picture" type="file" onChange={async (e) => {
+                        const file = e.target.files && e.target.files[0]; // Überprüfe, ob target.files nicht null ist
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.readAsDataURL(file); // Lese den Inhalt der Datei als Data-URL
+                            reader.onload = () => {
+                                const dataURL = reader.result as string; // Der Inhalt der Datei als Data-URL
+                                form.setValue("picture", dataURL); // Setze den Data-URL-Wert im Formular
+                            };
+                        }
+                    }} />
                 </div>
+
                 <Button type="submit">Absenden <ArrowRight className="pl-2" /></Button>
             </form>
+
         </Form>
     )
 }

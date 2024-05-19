@@ -39,24 +39,23 @@ const Page = () => {
 
             <section className="mt-20 text-center">
                 <Badge>Anfassen und Bestaunen</Badge>
-                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Erfahre wie unsere Produkte funktionieren.</h1>
+                <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Erfahren Sie wie unsere Produkte funktionieren.</h1>
                 <div className="flex justify-center">
                     <p className="mt-2 text-muted-foreground max-w-prose">In unserer Ausstellung können Sie unsere innovativen Produkte in Aktion sehen.
-                        Erhalten Sie eine praktische Erfahrung und erfahren Sie, wie sie Ihnen zugutekommen können.</p>
+                        Erhalten Sie eine praktisches Erlebnnis und erfahren Sie, wie sie Ihnen zugutekommen können.</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mt-10">
                     <div className="w-full p-5 bg-gray-100 rounded-lg border border-gray-200 flex flex-col items-center">
                         <Box className="w-10 h-10 text-primary" />
                         <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-2">Produktvorführungen</h1>
-                        <p className="text-muted-foreground mt-1 text-justify">Unser sachkundiges Personal wird Sie durch interaktive Produktvorführungen führen und dabei
+                        <p className="text-muted-foreground mt-1 text-justify">Unser sachkundiges Personal wird Sie durch interaktive Produktvorführungen leiten und dabei
                             deren Merkmale und Funktionalität präsentieren.</p>
                     </div>
                     <div className="w-full p-5 bg-gray-100 rounded-lg border border-gray-200 flex flex-col items-center">
                         <ShieldQuestion className="w-10 h-10 text-primary" />
                         <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-2">Expertenberatung</h1>
-                        <p className="text-muted-foreground mt-1 text-justify">Unser Team von Experten steht Ihnen zur Verfügung, um alle Fragen zu beantworten, die Sie haben
-                            könnten, und um personalisierte Empfehlungen basierend auf Ihren Bedürfnissen zu geben.</p>
+                        <p className="text-muted-foreground mt-1 text-justify">Unser Team von Experten steht Ihnen zur Verfügung, um alle Fragen zu beantworten, die Sie haben um personalisierte Empfehlungen, basierend auf Ihren Bedürfnissen geben</p>
                     </div>
                     <div className="w-full p-5 bg-gray-100 rounded-lg border border-gray-200 flex flex-col items-center">
                         <BadgeCheck className="w-10 h-10 text-primary" />
@@ -130,7 +129,7 @@ const Page = () => {
 
             <section className="mt-20">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Immer noch Fragen?</h1>
-                <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns gerne, und wir werden deine offenen Fragen gerne klären.</p>
+                <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns , und wir werden deine offenen Fragen gerne klären.</p>
                 <Button variant="outline" className="mt-5">
                     Kontakt aufnehmen
                     <ArrowRight className="pl-2" />

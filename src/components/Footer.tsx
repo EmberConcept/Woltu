@@ -14,7 +14,7 @@ const Footer = () => {
                             <h1
                                 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl w-3/5"
                             >
-                                Werde Teil der Veränderung mit <span className="text-primary">Woltu Energy</span> - Kontaktiere uns.
+                                Werde Teil der Veränderung mit <span className="text-primary">Woltu Energy</span> - Kontaktieren Sie uns.
                             </h1>
                             <div className="mt-5 md:mt-5 lg:mt-0 flex items-center gap-5">
                                 <Button variant="outline" className="text-gray-900"><Link href="/b2c" className="flex items-center gap-2">Termin vereinbaren <ArrowRight className="pl-2" /></Link></Button>

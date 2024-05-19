@@ -1,7 +1,7 @@
 'use client'
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowRight, Leaf, Mail, MapPin, Phone, Star, User, Zap } from "lucide-react";
+import { ArrowRight, Leaf, Mail, MapPin, Phone, User, Zap } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
@@ -18,7 +18,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Willkommen bei <span className="text-primary">WOLTU Energy.</span> Ein Ort für grüne Photovoltaik-Innovation.</h1>
           </Reveal>
           <Reveal>
-            <p className="mt-6 text-lg max-w-prose text-muted-foreground text-center">Besuchen Sie uns erleben einen Ort, an dem Technologie und Umweltbewusstsein
+            <p className="mt-6 text-lg max-w-prose text-muted-foreground text-center">Besuchen Sie uns und erleben einen Ort, an dem Technologie und Umweltbewusstsein
               Hand in Hand gehen. Schauen Sie vorbei und erleben Sie unsere Mission hautnah.</p>
           </Reveal>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
@@ -51,7 +51,7 @@ export default function Home() {
       <MaxWidthWrapper>
         <div className="w-full h-auto z-1000 relative">
           <Reveal>
-            <Image className="rounded-lg" src="/img/Bild_1.jpg" width={6000} height={3374} alt="Showroom" />
+            <Image className="rounded-lg" src="/img/Bild_1_2.jpg" width={5924} height={3336} alt="Showroom" />
           </Reveal>
 
         </div>
@@ -84,7 +84,7 @@ export default function Home() {
               </Reveal>
               <Reveal>
                 <p className="mt-3 text-lg max-w-prose text-muted-foreground text-justify">
-                  Unsere grünen Energieprodukte und -dienstleistungen bieten sowohl Umwelt- als
+                  Unsere nachhaltigen Energieprodukte und -dienstleistungen bieten sowohl Umwelt- als
                   auch wirtschaftliche Vorteile. Durch die Auswahl unserer Lösungen können Sie Ihren
                   CO2-Fußabdruck reduzieren und gleichzeitig Geld bei den Energiekosten sparen.
                 </p>
@@ -99,7 +99,7 @@ export default function Home() {
                     </div>
                     <h3 className="text-xl mt-2 font-bold text-gray-900 md:text-2xl">Umweltauswirkungen</h3>
                     <p className="mt-1 text-lg max-w-prose text-muted-foreground text-justify">
-                      Unsere grünen Energie- lösungen helfen dabei, Treibhausgasemissionen zu reduzieren</p>
+                      Unsere Energielösungen helfen dabei, Treibhausgasemissionen zu reduzieren</p>
                   </div>
                   <div className="flex flex-col gap-2">
                     <div className="w-14 h-14 bg-gray-100 rounded-lg flex justify-center items-center">
@@ -156,7 +156,7 @@ export default function Home() {
                     </div>
                     <div className="tracking-tighter">
                       <p className="text-muted-foreground">Kunde</p>
-                      <p>Marion W.</p>
+                      <p>Marion W. aus Euskirchen</p>
                     </div>
                   </div>
                   <Separator className="mt-5" />
@@ -175,7 +175,7 @@ export default function Home() {
                     </div>
                     <div className="tracking-tighter">
                       <p className="text-muted-foreground">Kunde</p>
-                      <p>Elfriede und Harald N.</p>
+                      <p>Elfriede und Harald N. aus Wuppertal</p>
                     </div>
                   </div>
                   <Separator className="mt-5" />
@@ -194,7 +194,7 @@ export default function Home() {
                     </div>
                     <div className="tracking-tighter">
                       <p className="text-muted-foreground">Kunde</p>
-                      <p>Stefan G.</p>
+                      <p>Stefan G. aus Pforzheim</p>
                     </div>
                   </div>
                   <Separator className="mt-5" />
@@ -213,7 +213,7 @@ export default function Home() {
                     </div>
                     <div className="tracking-tighter">
                       <p className="text-muted-foreground">Kunde</p>
-                      <p>Manu M.</p>
+                      <p>Manu M. aus München</p>
                     </div>
                   </div>
                   <Separator className="mt-5" />
@@ -276,7 +276,7 @@ export default function Home() {
 
           <Reveal>
             <video autoPlay loop width={1920} height={1080} className="mt-10 rounded-lg shadow-2xl">
-              <source src="/video.mp4" type="video/mp4" />
+              <source src="/video_2.mp4" type="video/mp4" />
             </video>
           </Reveal>
         </MaxWidthWrapper>

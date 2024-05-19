@@ -23,22 +23,22 @@ const Page = () => {
                     <div className="border-muted border-2 p-8 rounded-lg">
                         <Badge>Kontakt</Badge>
                         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mt-2">Was benötigen wir von Ihnen?</h1>
-                        <p className="text-muted-foreground mt-2">Damit Sie eine auf Sie ausgerichtete erste valide Einschötzung von uns erhalten können, benötigen wir von Ihnen folgende Angaben:</p>
+                        <p className="text-muted-foreground mt-2">Damit Sie eine auf Sie ausgerichtete erste valide Einschätzung von uns erhalten können, benötigen wir von Ihnen folgende Angaben:</p>
 
                         <Separator className="mt-5" />
 
                         <div className="mt-5">
                             <ol>
                                 <li className="text-muted-foreground font-semibold">- Den genauen Standort deines Objekts</li>
-                                <li className="text-muted-foreground font-semibold">- Bilder von:
-                                    <li className="ml-10 text-muted-foreground font-normal">- Allen Dachseiten, Dachziegel müssen klar erkennbar sein</li>
-                                    <li className="ml-10 text-muted-foreground font-normal">- Von den Giebelseiten</li>
-                                    <li className="ml-10 text-muted-foreground font-normal">- Aufstellungsmöglichkeiten für Gerüst entland der Hauswände</li>
-                                    <li className="ml-10 text-muted-foreground font-normal">- Dem kompletten Innenraum des Zählerkastens</li>
-                                    <li className="ml-10 text-muted-foreground font-normal">- Dem Hausanschlusskasten HAK</li>
-                                    <li className="ml-10 text-muted-foreground font-normal">- Der Erdung</li>
-                                    <li className="ml-10 text-muted-foreground font-normal">- Möglichem Standort für eine Wallbox</li>
-                                </li>
+                                <li className="text-muted-foreground font-semibold">- Bilder von:</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Allen Dachseiten, Dachziegel müssen klar erkennbar sein</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Von den Giebelseiten</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Aufstellungsmöglichkeiten für Gerüst entland der Hauswände</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Dem kompletten Innenraum des Zählerkastens</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Dem Hausanschlusskasten HAK</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Der Erdung</li>
+                                <li className="ml-10 text-muted-foreground font-normal">- Möglichem Standort für eine Wallbox</li>
+
                                 <li className="text-muted-foreground font-semibold">- Detailfotos von dem verbauten Dachziegel</li>
                             </ol>
 

@@ -5,12 +5,10 @@ import { Resend } from "resend";
 
 const apiKey = process.env.RESEND_API_KEY;
 
-// Überprüfe, ob der API-Schlüssel vorhanden ist
 if (!apiKey) {
     throw new Error('Missing Resend API key. Please make sure to set RESEND_API_KEY environment variable.');
 }
 
-// Erstelle eine Instanz von Resend mit dem API-Schlüssel
 const resend = new Resend(apiKey);
 
 export const sendEmail = async (formData: { email: string, message: string, topic: string, firstname: string, location: string, village: string, region: string, postal: string, phone: string, picture?: File | string; }) => {    

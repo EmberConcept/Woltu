@@ -38,7 +38,6 @@ const Page = () => {
                                 <li className="ml-10 text-muted-foreground font-normal">- Dem Hausanschlusskasten HAK</li>
                                 <li className="ml-10 text-muted-foreground font-normal">- Der Erdung</li>
                                 <li className="ml-10 text-muted-foreground font-normal">- Möglichem Standort für eine Wallbox</li>
-
                                 <li className="text-muted-foreground font-semibold">- Detailfotos von dem verbauten Dachziegel</li>
                             </ol>
 

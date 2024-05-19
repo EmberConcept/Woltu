@@ -3,8 +3,6 @@
 import EmailTemplate from "@/components/email-template";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export const sendEmail = async (formData: { email: string, message: string, topic: string, firstname: string, location: string, village: string, region: string, postal: string, phone: string, picture?: File | string; }) => {
     const email = formData.email;
     const message = formData.message;
@@ -16,6 +14,7 @@ export const sendEmail = async (formData: { email: string, message: string, topi
     const postal = formData.postal;
     const phone = formData.phone;
     const picture = formData.picture;
+    const resend = new Resend(process.env.RESEND_API_KEY);
     if (!message || typeof message !== "string") {
         return {
             error: "Invalid message",

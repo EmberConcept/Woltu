@@ -3,7 +3,17 @@
 import EmailTemplate from "@/components/email-template";
 import { Resend } from "resend";
 
-export const sendEmail = async (formData: { email: string, message: string, topic: string, firstname: string, location: string, village: string, region: string, postal: string, phone: string, picture?: File | string; }) => {
+const apiKey = process.env.RESEND_API_KEY;
+
+// Überprüfe, ob der API-Schlüssel vorhanden ist
+if (!apiKey) {
+    throw new Error('Missing Resend API key. Please make sure to set RESEND_API_KEY environment variable.');
+}
+
+// Erstelle eine Instanz von Resend mit dem API-Schlüssel
+const resend = new Resend(apiKey);
+
+export const sendEmail = async (formData: { email: string, message: string, topic: string, firstname: string, location: string, village: string, region: string, postal: string, phone: string, picture?: File | string; }) => {    
     const email = formData.email;
     const message = formData.message;
     const topic = formData.topic;
@@ -14,7 +24,6 @@ export const sendEmail = async (formData: { email: string, message: string, topi
     const postal = formData.postal;
     const phone = formData.phone;
     const picture = formData.picture;
-    const resend = new Resend(process.env.RESEND_API_KEY);
     if (!message || typeof message !== "string") {
         return {
             error: "Invalid message",

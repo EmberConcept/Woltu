@@ -71,7 +71,7 @@ const Page = () => {
                             <div>
                                 <Image src="/img/Bild_24.jpg" width={650} height={850} alt="Set 3"></Image>
                                 <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl mt-5">High-End Set</h1>
-                                <p className="text-muted-foreground mt-2 text-justify">AIKO Module, Gewinner des <span className="text-bold">red<span className="text-red-500">dot</span></span> Design Awards 2023, sind nicht nur die schönsten, sondern auch leistungsstärksten Module auf dem Markt. In Kombination mit den Mikrowechselrichtern von Enphase erzielen sie Spitzenleistungen und maximale Erträge für Ihre Solaranlage.</p>
+                                <p className="text-muted-foreground mt-2 text-justify">AIKO Module, Gewinner des <span className="font-bold">red<span className="text-red-500">dot</span></span> Design Awards 2023, sind nicht nur die schönsten, sondern auch leistungsstärksten Module auf dem Markt. In Kombination mit den Mikrowechselrichtern von Enphase erzielen sie Spitzenleistungen und maximale Erträge für Ihre Solaranlage.</p>
                             </div>
                             <Button className="mt-5 w-full">
                                 <Link href="/b2c" className="flex items-center gap-2">

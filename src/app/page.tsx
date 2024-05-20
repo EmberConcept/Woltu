@@ -273,7 +273,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <Reveal>
             <video autoPlay loop width={1920} height={1080} className="mt-10 rounded-lg shadow-2xl">
               <source src="/woltuvideo.mp4" type="video/mp4" />

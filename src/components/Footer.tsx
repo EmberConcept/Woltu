@@ -17,7 +17,7 @@ const Footer = () => {
                                 Werde Teil der Veränderung mit <span className="text-primary">Woltu Energy</span> - Kontaktieren Sie uns.
                             </h1>
                             <div className="mt-5 md:mt-5 lg:mt-0 flex items-center gap-5">
-                                <Button variant="outline" className="text-gray-900"><Link href="/b2c" className="flex items-center gap-2">Termin vereinbaren <ArrowRight className="pl-2" /></Link></Button>
+                                <Button variant="outline" className="text-gray-900"><Link href="mailto:info@woltuenger.com?subject=Terminvereinbarung" className="flex items-center gap-2">Termin vereinbaren <ArrowRight className="pl-2" /></Link></Button>
                                 <Link href='/#start' className={buttonVariants()}>Jetzt entdecken</Link>
                             </div>
                         </div>

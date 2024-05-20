@@ -142,8 +142,10 @@ const Page = () => {
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Immer noch Fragen?</h1>
                 <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns , und wir werden deine offenen Fragen gerne klären.</p>
                 <Button variant="outline" className="mt-5">
-                    Kontakt aufnehmen
-                    <ArrowRight className="pl-2" />
+                    <Link href="mailto:info@woltuenergy.com?subject=Fragen" className="flex items-center">
+                        Kontakt aufnehmen
+                        <ArrowRight className="pl-2" />
+                    </Link>
                 </Button>
             </section>
         </MaxWidthWrapper>

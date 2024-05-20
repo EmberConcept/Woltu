@@ -13,15 +13,15 @@ export default function Home() {
     <>
       <MaxWidthWrapper>
 
-        <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
+        <div className="py-20 mx-auto text-center flex flex-col items-center max-w-4xl">
           <Reveal>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Willkommen bei <span className="text-primary">WOLTU Energy.</span> Ein Ort für grüne Photovoltaik-Innovation.</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Willkommen bei <span className="text-primary">WOLTU Energy.</span> Ein Ort für grüne <br /> Photovoltaik-Innovation.</h1>
           </Reveal>
           <Reveal>
             <p className="mt-6 text-lg max-w-prose text-muted-foreground text-center">Besuchen Sie uns und erleben einen Ort, an dem Technologie und Umweltbewusstsein
               Hand in Hand gehen. Schauen Sie vorbei und erleben Sie unsere Mission hautnah.</p>
           </Reveal>
-          <div className="flex flex-col sm:flex-row gap-4 mt-6">
+          <div className="flex items-center gap-4 mt-6">
             <Reveal>
               <Link href='#start' className={buttonVariants()}>Jetzt entdecken</Link>
             </Reveal>

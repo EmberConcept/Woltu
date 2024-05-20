@@ -51,47 +51,77 @@ const Page = () => {
                 <p className="mt-2 text-muted-foreground max-w-prose">Machen Sie sich mit dem engagierten Team von Woltu Energy vertraut, das sich leidenschaftlich für erneuerbare Energien und eine nachhaltige Zukunft einsetzt.</p>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-10 bg-gray-100 border border-gray-200 rounded-lg p-10">
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 items-center">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_9.jpg" width={4096} height={4096} alt="Team"></Image>
-                        <div>
+                        <div className="text-center">
                             <p className="font-semibold">Željko Busić</p>
                             <p>Management</p>
                         </div>
+
+                        <Button className="w-20">
+                            <Link href="mailto:info@woltuenergy.com?subject=Nachricht%20an:%20Željko%20Busić">
+                                <Mail className="w-5 h-5" />
+                            </Link>
+                        </Button>
                         
                         
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 items-center">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_10.jpg" width={3966} height={3966} alt="Team"></Image>
-                        <div>
+                        <div className="text-center">
                             <p className="font-semibold">Marcus Carl</p>
                             <p>Vertrieb / Marketing</p>
                         </div>
+
+                        <Button className="w-20">
+                            <Link href="mailto:info@woltuenergy.com?subject=Nachricht%20an:%20Marcus%20Carl">
+                                <Mail className="w-5 h-5" />
+                            </Link>
+                        </Button>
                         
                         
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 items-center">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_11.jpg" width={3597} height={3597} alt="Team"></Image>
-                        <div>
+                        <div className="text-center">
                             <p className="font-semibold">Stefan Striehn</p>
                             <p>Einkauf</p>
                         </div>
+
+                        <Button className="w-20">
+                            <Link href="mailto:info@woltuenergy.com?subject=Nachricht%20an:%20Stefan%20Striehn">
+                                <Mail className="w-5 h-5" />
+                            </Link>
+                        </Button>
                         
                         
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 items-center">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_12.jpg" width={4096} height={4096} alt="Team"></Image>
-                        <div>
+                        <div className="text-center">
                             <p className="font-semibold">Marcel Peters</p>
                             <p>DC Spezialist</p>
                         </div>
+
+                        <Button className="w-20">
+                            <Link href="mailto:info@woltuenergy.com?subject=Nachricht%20an:%20Marcel%20Peters">
+                                <Mail className="w-5 h-5" />
+                            </Link>
+                        </Button>
                         
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 items-center">
                         <Image className="w-20 h-20 rounded-lg" src="/img/Bild_17.jpg" width={3405} height={3405} alt="Team"></Image>
-                        <div>
+                        <div className="text-center">
                             <p className="font-semibold">Guido Groß</p>
                             <p>AC Spezialist</p>
                         </div>
+
+                        <Button className="w-20">
+                            <Link href="mailto:info@woltuenergy.com?subject=Nachricht%20an:%20Guido%20Groß">
+                                <Mail className="w-5 h-5" />
+                            </Link>
+                        </Button>
                         
                         
                     </div>
@@ -103,7 +133,7 @@ const Page = () => {
                 <p className="mt-2 text-muted-foreground max-w-prose text-justify">Wir suchen nach motivierten Mitarbeitern, die sich mit unserer Unternehmensphilosophie
                     identifizieren und aktiv dazu beitragen möchten.</p>
                 <Button variant="outline" className="mt-5">
-                    <Link href="mailto:info@woltu-energy.com" className="flex items-center">
+                    <Link href="mailto:bewerbung@woltuenergy.com?subject=Bewerbung" className="flex items-center">
                         Jetzt Karriere machen
                         <ArrowRight className="pl-2" />
                     </Link>
@@ -153,7 +183,7 @@ const Page = () => {
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Immer noch Fragen?</h1>
                 <p className="mt-2 text-muted-foreground max-w-prose">Kein Problem! Kontaktiere uns , und wir werden deine offenen Fragen gerne klären.</p>
                 <Button variant="outline" className="mt-5">
-                    <Link href="/b2c" className="flex items-center">
+                    <Link href="mailto:info@woltuenergy.com?subject=Fragen" className="flex items-center">
                         Kontakt aufnehmen
                         <ArrowRight className="pl-2" />
                     </Link>

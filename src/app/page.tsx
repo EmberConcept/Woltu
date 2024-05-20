@@ -148,7 +148,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2">
             <Reveal>
               <div className="border-muted rounded-lg border">
-                <Image className="rounded-t-lg h-96" src="/img/Bild_18.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+              <div className="w-full rounded-t-lg h-96 bg-[url('/img/Bild_18.jpg')] bg-cover bg-center"></div>
                 <div className="p-5">
                   <div className="flex items-center gap-5">
                     <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
@@ -167,7 +167,7 @@ export default function Home() {
             </Reveal>
             <Reveal>
               <div className="border-muted rounded-lg border">
-                <Image className="rounded-t-lg h-96" src="/img/Bild_19.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+              <div className="w-full rounded-t-lg h-96 bg-[url('/img/Bild_19.jpg')] bg-cover bg-center"></div>
                 <div className="p-5">
                   <div className="flex items-center gap-5">
                     <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
@@ -186,7 +186,7 @@ export default function Home() {
             </Reveal>
             <Reveal>
               <div className="border-muted rounded-lg border">
-                <Image className="rounded-t-lg h-96" src="/img/Bild_20.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+              <div className="w-full rounded-t-lg h-96 bg-[url('/img/Bild_20.jpg')] bg-cover bg-center"></div>
                 <div className="p-5">
                   <div className="flex items-center gap-5">
                     <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
@@ -205,7 +205,7 @@ export default function Home() {
             </Reveal>
             <Reveal>
               <div className="border-muted rounded-lg border">
-                <Image className="rounded-t-lg h-96" src="/img/Bild_21.jpg" width={1600} height={1025} alt="Kundenfoto"></Image>
+                <div className="w-full rounded-t-lg h-96 bg-[url('/img/Bild_21.jpg')] bg-cover bg-center"></div>
                 <div className="p-5">
                   <div className="flex items-center gap-5">
                     <div className="rounded-full flex justify-center items-center w-12 h-12 bg-gray-100">
